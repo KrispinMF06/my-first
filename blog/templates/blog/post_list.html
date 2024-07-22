@@ -1,30 +1,63 @@
-<html>
-    <head>
-        <title>Lab 3 Django </title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Blog</a></h1>
-        </div>
-        
-        {% for post in posts %}
-            <div>
-                <p> publicado: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="/">Mi Blog UwU</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Sección del blog -->
+                <div class="content container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            {% for post in posts %}
+                                <div class="post">
+                                    <div class="date">
+                                        <p>publicado: {{ post.published_date }}</p>
+                                    </div>
+                                    <h2><a href="">{{ post.title }}</a></h2>
+                                    <p>{{ post.text|linebreaksbr }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Nueva sección de información sobre el gimnasio -->
+                <div class="gym-info">
+                    <h2>Información sobre el Gimnasio</h2>
+                    <p>Haz algo bueno con tu vida</p>
+                    <h3>Ejercicios Efectivos</h3>
+                    <p>Combina ejercicios de fuerza con ejercicios cardiovasculares.</p>
+                    <ul>
+                        <li>Entrenamiento con pesas</li>
+                        <li>Correr o hacer cardio</li>
+                        <li>Entrenamientos de alta intensidad HIIT</li>
+                    </ul>
+                    <h3>Consejos para tu vida</h3>
+                    <p>No olvides:</p>
+                    <ul>
+                        <li>Ser constante</li>
+                        <li>Duerme tus 8hrs</li>
+                        <li>Entra y come </li>
+                    </ul>
+                </div>
             </div>
-        {% endfor %}
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
+    </div>
+</body>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
 </html>
+
+
+
