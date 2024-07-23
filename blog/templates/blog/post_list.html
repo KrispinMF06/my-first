@@ -4,65 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarnitasReu</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Carnitas Reu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f0f0f0; /* Color de fondo clarito */
-            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            padding-bottom: 50px; /* Espacio para el pie de página */
+            color: #333;
         }
         .page-header {
-            background-color: #d3b89b; /* Color café claro para el encabezado */
-            padding: 20px;
+            background-color: #333;
+            padding: 20px 0;
             text-align: center;
             color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            letter-spacing: 2px;
         }
         .content {
-            background-color: #ffffff; /* Fondo blanco para el contenedor de contenido */
-            padding: 20px;
-            border-radius: 8px; /* Opcional: para bordes redondeados */
-            margin-top: 20px;
-        }
-        .product-img {
-            width: 200px; /* Ajusta el ancho de las imágenes */
-            height: 150px; /* Ajusta la altura de las imágenes */
-            object-fit: cover; /* Ajusta el contenido de la imagen para llenar el contenedor */
-            display: block; /* Asegura que las imágenes se comporten correctamente en el contenedor */
-            margin: 0 auto; /* Centra las imágenes dentro del contenedor */
-        }
-        .product {
-            margin-bottom: 30px;
+            padding: 60px 15px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .description {
             margin-bottom: 50px;
-        }
-        footer {
-            background-color: #d3b89b; /* Color café claro para el pie de página */
-            color: #fff; /* Color del texto en el pie de página */
-            padding: 10px 0; /* Reducción del padding */
             text-align: center;
-            position: fixed; /* Fija el pie de página en la parte inferior */
-            bottom: 0;
-            width: 100%;
-            font-size: 14px; /* Tamaño de fuente reducido para el pie de página */
+            font-size: 18px;
         }
         .category-header {
-            background-color: #eeeeee; /* Color de fondo para las cabeceras de las categorías */
-            padding: 10px;
-            border-radius: 4px; /* Opcional: para bordes redondeados */
-            margin-top: 20px;
+            padding: 15px;
+            margin-top: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            font-size: 28px;
+            font-family: 'Playfair Display', serif;
+            background-color: #f0eae0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-img {
+            width: 100%;
+            max-width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .caption h3 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+            font-family: 'Playfair Display', serif;
+        }
+        .btn-primary {
+            background-color: #333;
+            border-color: #333;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Quitar el subrayado */
+        }
+        .btn-primary:hover {
+            background-color: #555;
+            text-decoration: none; /* Asegura que el subrayado no aparezca al pasar el mouse */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            width: 100%;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="page-header">
-        <h1><a href="/" style="color: #fff; text-decoration: none;">Carnitas Reu</a></h1>
+        Carnitas Reu
     </div>
     <div class="content container">
         <!-- Descripción de la tienda -->
@@ -72,84 +105,68 @@
         </div>
         
         <!-- Catálogo de Productos -->
-        <h2>Catálogo de Productos</h2>
-
-        <!-- Categoría de Carnes -->
         <div class="category-header">
             <h3>Carnes</h3>
         </div>
-        <div class="row">
-            <div class="col-md-6 product">
-                <div class="thumbnail">
-                    <img src="{% static 'images/lomito.jpg' %}" alt="Lomito de 8oz" class="product-img">
-                    <div class="caption">
-                        <h3>Lomito de 8oz</h3>
-                        <p><strong>Precio:</strong> Q.65</p>
-                        <p>Deliciosa carne de lomito, perfecta para cualquier ocasión. Ideal para asar a la parrilla o cocinar a la plancha.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 product">
+                <img src="{% static 'images/lomito.jpg' %}" alt="Lomito de 8oz" class="product-img">
+                <div class="caption">
+                    <h3>Lomito de 8oz</h3>
+                    <p><strong>Precio:</strong> Q.65</p>
+                    <p>Deliciosa carne de lomito, perfecta para cualquier ocasión. Ideal para asar a la parrilla o cocinar a la plancha.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
                 </div>
             </div>
-            <div class="col-md-6 product">
-                <div class="thumbnail">
-                    <img src="{% static 'images/puyazo.jpg' %}" alt="Puyazo de 8oz" class="product-img">
-                    <div class="caption">
-                        <h3>Puyazo de 8oz</h3>
-                        <p><strong>Precio:</strong> Q.70</p>
-                        <p>Corte de puyazo jugoso y tierno, excelente para preparar un asado suculento o una deliciosa carne a la parrilla.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
-                    </div>
+            <div class="col-lg-4 col-md-6 product">
+                <img src="{% static 'images/puyazo.jpg' %}" alt="Puyazo de 8oz" class="product-img">
+                <div class="caption">
+                    <h3>Puyazo de 8oz</h3>
+                    <p><strong>Precio:</strong> Q.70</p>
+                    <p>Corte de puyazo jugoso y tierno, excelente para preparar un asado suculento o una deliciosa carne a la parrilla.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
                 </div>
             </div>
-            <div class="col-md-6 product">
-                <div class="thumbnail">
-                    <img src="{% static 'images/new_york_steak.jpg' %}" alt="New York Steak" class="product-img">
-                    <div class="caption">
-                        <h3>New York Steak</h3>
-                        <p><strong>Precio:</strong> Q.75</p>
-                        <p>Steak de New York de alta calidad, ideal para los amantes de la carne. Perfecto para una cena gourmet.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
-                    </div>
+            <div class="col-lg-4 col-md-6 product">
+                <img src="{% static 'images/new_york_steak.jpg' %}" alt="New York Steak" class="product-img">
+                <div class="caption">
+                    <h3>New York Steak</h3>
+                    <p><strong>Precio:</strong> Q.75</p>
+                    <p>Steak de New York de alta calidad, ideal para los amantes de la carne. Perfecto para una cena gourmet.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
                 </div>
             </div>
         </div>
 
-        <!-- Categoría de Bebidas -->
         <div class="category-header">
             <h3>Bebidas</h3>
         </div>
-        <div class="row">
-            <div class="col-md-6 product">
-                <div class="thumbnail">
-                    <img src="{% static 'images/cremita.jpg' %}" alt="Cremita" class="product-img">
-                    <div class="caption">
-                        <h3>Cremita</h3>
-                        <p><strong>Precio:</strong> Q.20</p>
-                        <p>Refrescante cremita que acompaña perfectamente cualquier comida. Dulce y suave, ideal para toda la familia.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 product">
+                <img src="{% static 'images/cremita.jpg' %}" alt="Cremita" class="product-img">
+                <div class="caption">
+                    <h3>Cremita</h3>
+                    <p><strong>Precio:</strong> Q.20</p>
+                    <p>Refrescante cremita que acompaña perfectamente cualquier comida. Dulce y suave, ideal para toda la familia.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
                 </div>
             </div>
-            <div class="col-md-6 product">
-                <div class="thumbnail">
-                    <img src="{% static 'images/horchata.jpg' %}" alt="Horchata" class="product-img">
-                    <div class="caption">
-                        <h3>Horchata</h3>
-                        <p><strong>Precio:</strong> Q.25</p>
-                        <p>Deliciosa horchata, una bebida tradicional y refrescante que combina perfectamente con nuestras carnes.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
-                    </div>
+            <div class="col-lg-4 col-md-6 product">
+                <img src="{% static 'images/horchata.jpg' %}" alt="Horchata" class="product-img">
+                <div class="caption">
+                    <h3>Horchata</h3>
+                    <p><strong>Precio:</strong> Q.25</p>
+                    <p>Deliciosa horchata, una bebida tradicional y refrescante que combina perfectamente con nuestras carnes.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
                 </div>
             </div>
-            <div class="col-md-6 product">
-                <div class="thumbnail">
-                    <img src="https://images.squarespace-cdn.com/content/v1/59c3feb149fc2b152179e47e/1524077908161-PFM6N2KV2M384VJFU4OE/SantaMartaCarnival2013-24-by-AlejandroLinaresGarcia-681x1024.jpg" alt="Piña Colada" class="product-img">
-                    <div class="caption">
-                        <h3>Piña Colada</h3>
-                        <p><strong>Precio:</strong> Q.25</p>
-                        <p>Exótica piña colada, la bebida perfecta para disfrutar en cualquier ocasión. Refrescante y con un toque tropical.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Detalle</a></p>
-                    </div>
+            <div class="col-lg-4 col-md-6 product">
+                <img src="https://images.squarespace-cdn.com/content/v1/59c3feb149fc2b152179e47e/1524077908161-PFM6N2KV2M384VJFU4OE/SantaMartaCarnival2013-24-by-AlejandroLinaresGarcia-681x1024.jpg" alt="Piña Colada" class="product-img">
+                <div class="caption">
+                    <h3>Piña Colada</h3>
+                    <p><strong>Precio:</strong> Q.25</p>
+                    <p>Exótica piña colada, la bebida perfecta para disfrutar en cualquier ocasión. Refrescante y con un toque tropical.</p>
+                    <p><a href="#" class="btn btn-primary" role="button" style="text-decoration: none;">Ver Detalle</a></p>
                 </div>
             </div>
         </div>
@@ -159,11 +176,11 @@
     <footer>
         <p>&copy; 2024 Carnitas Reu. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-
 
 
