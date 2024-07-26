@@ -64,6 +64,18 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
+                <!-- Submenú de productos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#computadoras">Laptops y Computadoras</a>
+                        <a class="dropdown-item" href="#gadgets">Gadgets Electrónicos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Accesorios</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -74,16 +86,16 @@
         <p>Explora nuestra selección de computadoras y gadgets de última generación.</p>
 
         <!-- Sección de Computadoras -->
-        <h2>Laptos y Computadoras</h2>
-        <div id="computadoras" class="row">
+        <h2 id="computadoras">Laptops y Computadoras</h2>
+        <div class="row">
             <!-- Tarjeta de producto 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/6643c25d4f46a4d19c7ab47d/master/w_1600,c_limit/HP-Spectre-x360-front-Offwhite-Background-SOURCE-HP.jpg/350x150" class="card-img-top" alt="HP Spectre x360 14 (2024)">
+                    <img src="https://media.es.wired.com/photos/6643c25d4f46a4d19c7ab47d/master/w_1600,c_limit/HP-Spectre-x360-front-Offwhite-Background-SOURCE-HP.jpg/350x150" class="card-img-top" alt="Producto 1">
                     <div class="card-body">
-                        <h5 class="card-title">HP Spectre x360 14 (2024)</h5>
-                        
-                        <p class="card-price">Q.4,299.99</p>
+                        <h5 class="card-title">Laptop ASUS VivoBook 15</h5>
+                        <p class="card-text">Modelo X512FA</p>
+                        <p class="card-price">Q. 3,499.00</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product1Modal">Ver Detalle</a>
                     </div>
                 </div>
@@ -91,11 +103,11 @@
             <!-- Tarjeta de producto 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/6643c25dfeedf5fce320811f/master/w_1600,c_limit/MacBook-Air-13-Inch-M3-Front-Gear.jpg/350x150" class="card-img-top" alt="Apple MacBook Air (13- y 15-Inch, 2024)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_D1Fl7rXYz0wKajEEZz5Kfcv53EjL8G2jg&s/350x150" class="card-img-top" alt="Producto 2">
                     <div class="card-body">
-                        <h5 class="card-title">Apple MacBook Air (13- y 15-Inch, 2024)</h5>
-                       
-                        <p class="card-price">Q.8,099.99</p>
+                        <h5 class="card-title">Laptop HP Pavilion</h5>
+                        <p class="card-text">Modelo 14-ce3010la</p>
+                        <p class="card-price">Q. 4,250.00</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product2Modal">Ver Detalle</a>
                     </div>
                 </div>
@@ -103,11 +115,11 @@
             <!-- Tarjeta de producto 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/6643c25eb35bd3cf5ea1e65d/master/w_1600,c_limit/Asus-Zenbook-14-OLED-front-Offwhite-Background-SOURCE-Asus.jpg/350x150" class="card-img-top" alt="Asus Zenbook 14 OLED (2024)">
+                    <img src="https://images-cdn.ubuy.co.in/633aae8db52ac20d0b37956e-dell-inspiron-15-3000-laptop-2021.jpg/350x150" class="card-img-top" alt="Producto 3">
                     <div class="card-body">
-                        <h5 class="card-title">Asus Zenbook 14 OLED (2024)</h5>
-                    
-                        <p class="card-price">Q.1,749.99</p>
+                        <h5 class="card-title">Laptop Dell Inspiron 15</h5>
+                        <p class="card-text">Modelo 3501</p>
+                        <p class="card-price">Q. 3,899.00</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product3Modal">Ver Detalle</a>
                     </div>
                 </div>
@@ -115,11 +127,11 @@
             <!-- Tarjeta de producto 4 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/658c3c109599d56db4e2f592/master/w_1600,c_limit/System76-Lemur-Pro-Laptop-Review.png350x150" class="card-img-top" alt="System76 Lemur Pro Laptop">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcxg0wejU9qqoX21lqzK6Mk4BC0dcGhuz_Q&s/350x150" class="card-img-top" alt="Producto 4">
                     <div class="card-body">
-                        <h5 class="card-title">System76 Lemur Pro Laptop</h5>
-                   
-                        <p class="card-price">Q.1,199.99</p>
+                        <h5 class="card-title">PC Gamer Lenovo Legion</h5>
+                        <p class="card-text">Modelo T5</p>
+                        <p class="card-price">Q. 7,599.00</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product4Modal">Ver Detalle</a>
                     </div>
                 </div>
@@ -127,11 +139,11 @@
             <!-- Tarjeta de producto 5 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/6643c25f4f46a4d19c7ab47e/master/w_1600,c_limit/Gear-razer-blade-14-SOURCE-Razer.jpg/350x150" class="card-img-top" alt="Razer Blade 14">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7QofSQ-Wi9bby7bbOqwaxf99PMj-HzlLKhw&s/350x150" class="card-img-top" alt="Producto 5">
                     <div class="card-body">
-                        <h5 class="card-title">Razer Blade 14</h5>
-                   
-                        <p class="card-price">Q.1,499.99</p>
+                        <h5 class="card-title">PC HP All-in-One</h5>
+                        <p class="card-text">Modelo 24-df1026la</p>
+                        <p class="card-price">Q. 5,299.00</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product5Modal">Ver Detalle</a>
                     </div>
                 </div>
@@ -139,11 +151,11 @@
             <!-- Tarjeta de producto 6 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/6643c25fb35bd3cf5ea1e65e/master/w_1600,c_limit/Asus-Zenbook-Duo-2024-Screens-Keyboard-Floating0Offwhite-Background-SOURCE-Asus.jpg/350x150" class="card-img-top" alt="Asus Zenbook Duo (2024)">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2iX5eu7k0J5V806RKz_OxJZ1tKmLAwBG7MA&s/350x150" class="card-img-top" alt="Producto 6">
                     <div class="card-body">
-                        <h5 class="card-title">Asus Zenbook Duo (2024)</h5>
-              
-                        <p class="card-price">Q.5,849.99</p>
+                        <h5 class="card-title">PC ASUS ROG Strix</h5>
+                        <p class="card-text">Modelo GA15</p>
+                        <p class="card-price">Q. 8,299.00</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product6Modal">Ver Detalle</a>
                     </div>
                 </div>
@@ -151,319 +163,93 @@
         </div>
 
         <!-- Sección de Gadgets Electrónicos -->
-        <h2>Gadgets Electrónicos</h2>
-        <div id="gadgets" class="row">
+        <h2 id="gadgets">Gadgets Electrónicos</h2>
+        <div class="row">
             <!-- Tarjeta de producto 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/65a04413258e016c807ca220/master/w_1600,c_limit/Telescopio%20Celestron%20Origin.jpeg/350x150" class="card-img-top" alt="Telescopio Celestron Origin">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTch0JwUm6Es_coeHM0h8T2oRWyzW8XvEug&s/350x150" class="card-img-top" alt="Gadget 1">
                     <div class="card-body">
-                        <h5 class="card-title">Telescopio Celestron Origin</h5>
-                       
-                        <p class="card-price">Q.10,099.99</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#gadget1Modal">Ver Detalle</a>
+                        <h5 class="card-title">Smartwatch Samsung Galaxy</h5>
+                        <p class="card-text">Modelo Watch 4</p>
+                        <p class="card-price">Q. 1,199.00</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product7Modal">Ver Detalle</a>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta de producto 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/65a0464f258e016c807ca222/master/w_1600,c_limit/Anker%20MagGo%20Power%20Bank.jpeg/350x150" class="card-img-top" alt="Cargadores inalámbricos MagGo Qi2 de Anker">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdObYAnPJwrx-_GihpqNFaNz9RK7unDQ9wyw&s/350x150" class="card-img-top" alt="Gadget 2">
                     <div class="card-body">
-                        <h5 class="card-title">Cargadores inalámbricos MagGo Qi2 de Anker</h5>
-
-                        <p class="card-price">Q.2,099.99</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#gadget2Modal">Ver Detalle</a>
+                        <h5 class="card-title">Smartwatch Xiaomi Mi Band</h5>
+                        <p class="card-text">Modelo 6</p>
+                        <p class="card-price">Q. 349.00</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product8Modal">Ver Detalle</a>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta de producto 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/65a053ef7f2c5c15b5d0fafa/master/w_1600,c_limit/Alimentador%20para%20gatos%20y%20perros%20RCA%20con%20ca%CC%81mara.jpg/350x150" class="card-img-top" alt="Alimentador para gatos y perros RCA con cámara de 1080p">
+                    <img src="https://cellexportgt.com/cdn/shop/products/s-l1000_8fba621c-f45e-4e37-be4c-e9103836cee0.jpg?v=1655865379&width=1000/350x150" class="card-img-top" alt="Gadget 3">
                     <div class="card-body">
-                        <h5 class="card-title">Alimentador para gatos y perros RCA con cámara de 1080p</h5>
-
-                        <p class="card-price">Q.2,049.99</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#gadget3Modal">Ver Detalle</a>
+                        <h5 class="card-title">Audífonos Sony WH-1000XM4</h5>
+                        <p class="card-text">Modelo WH-1000XM4</p>
+                        <p class="card-price">Q. 1,599.00</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product9Modal">Ver Detalle</a>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta de producto 4 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/65a0559771670c5c6e90eba4/master/w_1600,c_limit/Collar%20inteligente%20para%20perros%20Invoxia%20Minitailz.jpeg/350x150" class="card-img-top" alt="Collar inteligente para perros ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ghP7ofw9tqE8WUhK6bx2Dt-zFilaJfgezA&s/350x150" class="card-img-top" alt="Gadget 4">
                     <div class="card-body">
-                        <h5 class="card-title">Collar inteligente para perros </h5>
-                     
-                        <p class="card-price">Q.1,179.99</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#gadget4Modal">Ver Detalle</a>
+                        <h5 class="card-title">Auriculares Bose QuietComfort</h5>
+                        <p class="card-text">Modelo QC 35 II</p>
+                        <p class="card-price">Q. 1,499.00</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product10Modal">Ver Detalle</a>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta de producto 5 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/65a05ba0201f7dcd21dae438/master/w_1600,c_limit/Monitor%20inteligente%20LG%20MyView%20de%2032%20pulgadas.jpeg/350x150" class="card-img-top" alt="Monitor inteligente LG MyView de 32 pulgadas">
+                    <img src="https://canarias.worten.es/i/0d66da0deb9d784d8eda5a93ce55ac4df31db48a/350x150" class="card-img-top" alt="Gadget 5">
                     <div class="card-body">
-                        <h5 class="card-title">Monitor inteligente LG MyView de 32 pulgadas</h5>
-
-                        <p class="card-price">Q.1,219.99</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#gadget5Modal">Ver Detalle</a>
+                        <h5 class="card-title">Cámara GoPro HERO9</h5>
+                        <p class="card-text">Modelo HERO9 Black</p>
+                        <p class="card-price">Q. 3,299.00</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product11Modal">Ver Detalle</a>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta de producto 6 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://media.es.wired.com/photos/65a065dc258e016c807ca234/master/w_1600,c_limit/Teclado%20Satechi%20SM1%20Slim.jpeg/350x150" class="card-img-top" alt="Gadget 6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIAY0cbjDEuKew2qp7vWV3RlTVaN3yTGUsQ&s/350x150" class="card-img-top" alt="Gadget 6">
                     <div class="card-body">
-                        <h5 class="card-title">Teclado mecánico retroiluminado Bluetooth Satechi SM1 Slim</h5>
-              
-                        <p class="card-price">Q.3,159.99</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#gadget6Modal">Ver Detalle</a>
+                        <h5 class="card-title">Dron DJI Mini 2</h5>
+                        <p class="card-text">Modelo Mini 2</p>
+                        <p class="card-price">Q. 4,199.00</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product12Modal">Ver Detalle</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modales de producto -->
-    <!-- Modal de producto 1 -->
-    <div class="modal fade" id="product1Modal" tabindex="-1" role="dialog" aria-labelledby="product1ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="product1ModalLabel">HP Spectre x360 14 (2024)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La Spectre x360 (9/10, calificación WIRED) es una laptop superligera con Windows. No es la Spectre x360 angulosa y de diseño pesado de hace unos años. Las curvas del último modelo están revestidas de negro, plata y azul corporativos, lo que da a esta laptop un diseño limpio y elegante.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de producto 2 -->
-    <div class="modal fade" id="product2Modal" tabindex="-1" role="dialog" aria-labelledby="product2ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="product2ModalLabel">Apple MacBook Air (13- y 15-Inch, 2024)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La última MacBook Air de Apple (7/10, calificación WIRED) con el chip M3 de la compañía es nuestra Macbook favorita. Es una máquina elegante y portátil con potencia de sobra para el usuario medio.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de producto 3 -->
-    <div class="modal fade" id="product3Modal" tabindex="-1" role="dialog" aria-labelledby="product3ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="product3ModalLabel">Asus Zenbook 14 OLED (2024)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Nos ha sorprendido gratamente ver más laptops de bajo costo que siguen incorporando el ajuste del rendimiento centrado en la inteligencia artificial. La Asus Zenbook 14 OLED (7/10, análisis de WIRED), la última de la línea de laptops asequibles y sencillas</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de producto 4 -->
-    <div class="modal fade" id="product4Modal" tabindex="-1" role="dialog" aria-labelledby="product4ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="product4ModalLabel">System76 Lemur Pro Laptop</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>¿No te gusta Windows 11? Prueba Linux. La Lemur Pro de System76 (9/10, calificación WIRED) es una laptop Linux de 14 pulgadas, fina y ligera, que consigue el mejor equilibrio entre potencia y portabilidad. Está basada en un procesador Intel Core Ultra 5 con 8 gigabytes de RAM y un SSD de 500 gigabytes.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de producto 5 -->
-    <div class="modal fade" id="product5Modal" tabindex="-1" role="dialog" aria-labelledby="product5ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="product5ModalLabel">Razer Blade 14</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Razer es conocida por sus laptops para juegos de gama alta, y el delgado chasis de aluminio de la Razer Blade 14 (8/10, calificación WIRED) tiene la misma lujosa calidad de construcción por la que nos ha gustado en el pasado. </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de producto 6 -->
-    <div class="modal fade" id="product6Modal" tabindex="-1" role="dialog" aria-labelledby="product6ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="product6ModalLabel">Asus Zenbook Duo (2024)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La última versión de Asus Zenbook Duo (9/10, calificación WIRED) parece un laptop estándar de 14 pulgadas. Al abrir la tapa, encontrarás el teclado y el trackpad habituales, pero el teclado está unido al chasis magnéticamente: levántalo y encontrarás una segunda pantalla táctil de 14 pulgadas escondida debajo.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Compu Xela. Todos los derechos reservados.</p>
+    </footer>
 
-    <!-- Modales de gadgets -->
-    <!-- Modal de gadget 1 -->
-    <div class="modal fade" id="gadget1Modal" tabindex="-1" role="dialog" aria-labelledby="gadget1ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="gadget1ModalLabel">Telescopio Celestron Origin</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El nuevo telescopio de proyección en pantalla de Celestron, Origin, te permite explorar las estrellas a través del sensor de 6.4 megapíxeles, que proyecta imágenes en tu dispositivo inteligente. </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de gadget 2 -->
-    <div class="modal fade" id="gadget2Modal" tabindex="-1" role="dialog" aria-labelledby="gadget2ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="gadget2ModalLabel">Cargadores inalámbricos MagGo Qi2 de Anker</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Anker mostró un montón de cargadores inalámbricos en el CES 2024, y casi todos ellos cuentan con la certificación Qi2, que es el estándar más reciente. Todos disponen de funciones diferentes de un modo u otro. El Anker MagGo Power Bank tiene una capacidad de 10,000 mAh y un soporte integrado, con una pantalla en el lateral que muestra cuánta batería queda. </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de gadget 3 -->
-    <div class="modal fade" id="gadget3Modal" tabindex="-1" role="dialog" aria-labelledby="gadget3ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="gadget3ModalLabel">Alimentador para gatos y perros RCA con cámara de 1080p</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Teniendo en cuenta que las mascotas de RCA son los perros Nipper y Chipper, tiene sentido que la marca se expanda a los gadgets para mascotas. Dos alimentadores automáticos tienen capacidad para seis litros de alimento seco. Puedes programar la hora de la comida o activarlo manualmente a través de la app, y también funcionan con Google Assistant y Alexa. </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de gadget 4 -->
-    <div class="modal fade" id="gadget4Modal" tabindex="-1" role="dialog" aria-labelledby="gadget4ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="gadget4ModalLabel">Collar inteligente para perros</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El Invoxia Minitailz monitorea las funciones vitales respiratorias y cardiacas, detecta la fibrilación auricular y rastrea las anomalías de comportamiento. La app recopila todos los datos registrados en información fácil de entender que te dará una buena idea de si necesitas ponerte en contacto con un veterinario, con un poco de suerte mucho antes de que ocurra algo grave.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de gadget 5 -->
-    <div class="modal fade" id="gadget5Modal" tabindex="-1" role="dialog" aria-labelledby="gadget5ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="gadget5ModalLabel">Monitor inteligente LG MyView de 32 pulgadas</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La nueva serie de monitores inteligentes 4K MyView de LG difumina esta línea, ofreciendo inteligencia integrada a través del webOS de LG para que transmitas directamente desde la pantalla, sin necesidad de la computadora.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de gadget 6 -->
-    <div class="modal fade" id="gadget6Modal" tabindex="-1" role="dialog" aria-labelledby="gadget6ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="gadget6ModalLabel">Teclado mecánico retroiluminado Bluetooth Satechi SM1 Slim</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El SM1 Slim es el primer teclado mecánico de Satechi. Viene con una configuración del 75%, interruptores marrones de bajo perfil (con menos resistencia), teclas extraíbles y una retroiluminación blanca ajustable.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts de Bootstrap -->
+    <!-- Enlaces a Bootstrap JS y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
